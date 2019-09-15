@@ -1,173 +1,146 @@
 ﻿<!DOCTYPE html>
 <html>
-<meta charset = "UTF-8">
+
 <head>
 
 <title>Titl</title>
+<meta charset = "UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-	font-family: Arial, Helvetica, sans-serif;
+<link rel="stylesheet" href="style.css">
+<script>
+
+function stickM() {
+	navbar = document.getElementById("navbar");
+	if (navbar.classList.contains("sticky")){
+		navbar.classList.remove("sticky");
+	}
+	else{
+		navbar.classList.add("sticky");
+	 }
 }
 
-.divwb {
-	width: 100%;
-	height: 969px;
-	background-image:
-		url(https://sciencebasedmedicine.org/wp-content/uploads/2018/07/desi-cow.jpg);
-	min-height: 500px;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size:cover;
-}
-.header {
-  padding: 80px;
-  text-align: center;
-  background: #1abc9c;
-  color: white;
+function clickC(){
+	if(typeof(Storage) !== "undefined")
+	{
+		if(localStorage.clickcount)
+			localStorage.clickcount = Number(localStorage.clickcount)+1;
+		else
+			localStorage.clickcount = 1;
+		if(!localStorage.oldparagraph)localStorage.oldparagraph = document.getElementById("counte").innerHTML;
+		document.getElementById("counte").innerHTML = localStorage.oldparagraph + localStorage.clickcount;
+	}
+	
 }
 
-.header h1 {
-  font-size: 40px;
+function  clickDel(){
+	if(typeof(Storage) !== "undefined")
+	{
+		localStorage.clickcount = 0;
+		document.getElementById("counte").innerHTML = localStorage.oldparagraph;
+	}	
 }
 
+</script>
 
-.nabar {
- overflow: hidden;
- background-color: #333;
-}
-
-.nabar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-.SlideShow{
-	width: 800px;
-	height: 480px;
-}
-.nabar a.right {
-  float: right;
-}
-
-.nabar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.row {  
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.side {
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-.main {   
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-}
-
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-.content {
-  padding: 16px;
-}
-
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-}
-
-.sticky
-{
-	position:fixed;
-	top:0;
-	width:100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width:100%;
-  }
-}
-</style>
 </head>
-<body>
 
-<!-- navigation bar -->
+<body style="background-attachment:fixed;">
 
-<nav class= "nabar" id="navbar">
-	<a href="#home" class="button on nav">Home</a>
-	<a href="#gallery" class="button on nav">SLika</a>
-	<a href="#tour" class="button on nav">Tour</a>
+<a href="index.html" style="text-align:center;"><img src="images/SITEFLAG.png" style="max-width:700px;width:100%;height:150px; padding: 15px;padding-left:7px;margin-right:15px;"></a>
+
+<nav id="navbar">
+	<a href="index.html" class="navBtn">Home</a>
+	<a href="#gallery" class="navBtn" onclick="clickC()">Slika</a>
+	<a href="#contact" class="navBtn">Contact</a>
 </nav>
-<div class="divwb">
- <p> Just gonna type plenty of text to fill the screen in the hopes of it filling the screeen,možda će ovo biti lakse ako budem pricao gluposti....
+
+<div class="txtdiv">
+
+<p id="counte" style="max-width:600px"> Just gonna type plenty of text to fill the screen in the hopes of it filling the screeen,možda će ovo biti lakse ako budem pricao gluposti....
 Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
 
 Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
 
 Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p> Just gonna type plenty of text to fill the screen in the hopes of it filling the screeen,možda će ovo biti lakse ako budem pricao gluposti....
-Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
 
-Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+<pre style ="font-size:15px"> Just gonna type plenty of text to fill the screen in the hopes of it 
+filling the screeen,možda će ovo biti lakse ako budem pricao gluposti....
+Some text to enable scrolling.. 
+Lorem ipsum dolor sit amet, illum definitiones no quo, 
+maluisset concludaturque et eum, altera fabulas ut quo. 
+Atqui causae gloriatur ius te, id agam omnis evertitur eum. 
+Affert laboramus repudiandae nec et. Inciderint efficiantur 
+his ad. Eum no molestiae voluptatibus.
 
-Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p> Just gonna type plenty of text to fill the screen in the hopes of it filling the screeen,možda će ovo biti lakse ako budem pricao gluposti....
-Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+Some text to enable scrolling.. Lorem ipsum dolor sit amet, 
+illum definitiones no quo, maluisset concludaturque et eum, 
+altera fabulas ut quo. Atqui causae gloriatur ius te, id agam 
+omnis evertitur eum. Affert laboramus repudiandae nec et. 
+Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
 
-Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
-
-Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p> Just gonna type plenty of text to fill the screen in the hopes of it filling the screeen,možda će ovo biti lakse ako budem pricao gluposti....
-Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
-
-Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
-
-Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p> Just gonna type plenty of text to fill the screen in the hopes of it filling the screeen,možda će ovo biti lakse ako budem pricao gluposti....
-Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
-
-Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
-
-Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+Some text to enable scrolling.. <del>Lorem ipsum dolor sit amet, 
+illum definitiones no quo, maluisset concludaturque et eum, 
+altera fabulas ut quo. Atqui causae gloriatur ius te, id agam 
+omnis evertitur eum. Affert laboramus repudiandae nec et. 
+Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</del></pre>
 
 </div>
 
-<img class="SlideShow" src="https://static.doomworld.com/monthly_2017_10/59d27f0f00d35_futureoffice_original.jpg.53104698d55fe67ca823f37e1277136e.jpg">
-<img class="SlideShow" src="https://globalgamejam.org/sites/default/files/styles/game_sidebar__normal/public/game/featured_image/promo_5.png?itok=9dymM8JD">
-<div class="divwb" style="background-image: url(data:image/jpeg;base64,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)">
+
+<section id="gallery">
+
+<picture>
+	<source media="(min-width: 900px)" srcset="images/tractor4.jpg">
+	<source media="(min-width: 600px)" srcset="images/tractor1.jpg">
+	<img src="images/tractor3.jpg" alt="tractor" style="width:300px;height:300px;">
+</picture>
+<img class="SlideShow Image" alt="spiderman in room filled with his portrait" src="https://static.doomworld.com/monthly_2017_10/59d27f0f00d35_futureoffice_original.jpg.53104698d55fe67ca823f37e1277136e.jpg">
+<img class="SlideShow Image" alt="2 people riding a rainbow shark" src="https://globalgamejam.org/sites/default/files/styles/game_sidebar__normal/public/game/featured_image/promo_5.png?itok=9dymM8JD">
+</section>
+
+<div class="txtdiv">
+
+<button type="button" onclick="clickDel()">Reset Counter</button>
+<button type="button" onclick="stickM()">Stick navbar</button>
+
+<table style="width:700px;">
+	<caption>Cool table</caption>
+	<tr>
+		<th>Num</th>
+		<th colspan="2">special info</th>
+		<th>second info</th>
+	</tr>
+	<tr>
+		<td>Num</td>
+		<td colspan="2">2 different info</td>
+		<td>second info</td>
+	</tr>
+	<tr>
+		<td>Num</td>
+		<td colspan="2">2 different info</td>
+		<td>second info</td>
+	</tr>
+	<tr>
+		<td>Num</td>
+		<td colspan="2">2 different info</td>
+		<td>second info</td>
+	</tr>
+</table>
+
 </div>
-<div class="footer">
-  <h2>Footer</h2>
-</div>
-<script src="scripts/sticky navbar.js"></script>
-<script src="scripts/carousel.js"></script>
+
+<section style="margin:20px;">
+	<form action="phpscript.php" method="post" target="_blank">
+		This very big test;<br>
+		Please input password and name:<br>
+		<input type="password" name="passofkey" placeholder="password"><br>
+		<input type="text" name="Username" placeholder="John kevin"><br>
+		<input type="submit">
+	</form>
+</section>
+<footer id="contact">
+  <p>Contact at: <a href="mail_to:person@mail.com">person@mail.com</a></p>
+<footer>
 </body>
+<script src="scripts/carousel.js"></script>
 </html>

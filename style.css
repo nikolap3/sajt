@@ -1,0 +1,82 @@
+#navbar {
+	width : 100%;
+	max-width : 700px;
+	background-color : rgba(0,0,0,0.5);
+	overflow:hidden;
+	top:0px;
+}
+
+#navbar a{
+	color : white;
+	float : left;
+	padding : 10px;
+	text-decoration : none;
+}
+
+#navbar a:hover{
+	background-color : green;
+}
+
+#navbar a:active{
+	background-color : rgba(214,167,122,0.8);
+}
+
+.sticky {
+	position : sticky;
+	Top: 180px;
+}
+
+.Image {
+	float : left;
+	overflow : auto;
+	width : 530px;
+	height : 300px;
+	opacity : 0.5;
+}
+
+.Image:hover {
+	opacity: 1.0;
+}
+
+input[type=text]:focus {
+  border: none;
+  border-bottom: 2px solid red;
+}
+
+body {
+	background-image: url("images/rainbow.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #00ffff;
+}
+
+table {
+	background-color : red;
+    counter-reset: rowNumber;
+	border-radius: 25px;
+}
+
+table tr:not(:first-child) {
+    counter-increment: rowNumber;
+}
+
+table tr td:first-child::before {
+    content: counter(rowNumber);
+	min-width: 1em;
+    margin-right: 0.5em;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding:5px;
+	text-align: left;
+}
+
+td {
+	
+}
+
+tr:hover {
+	background-color: #f5FFFF
+}
