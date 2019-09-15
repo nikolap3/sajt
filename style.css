@@ -51,7 +51,7 @@ body {
 }
 
 table {
-	background-color : red;
+	background-color : rgb(0,154,130);
     counter-reset: rowNumber;
 	border-radius: 25px;
 }
