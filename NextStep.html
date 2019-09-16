@@ -3,44 +3,10 @@
 
 <head>
 
-<title>Titl</title>
+<title>page 2</title>
 <meta charset = "UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
-<script>
-
-function stickM() {
-	navbar = document.getElementById("navbar");
-	if (navbar.classList.contains("sticky")){
-		navbar.classList.remove("sticky");
-	}
-	else{
-		navbar.classList.add("sticky");
-	 }
-}
-
-function clickC(){
-	if(typeof(Storage) !== "undefined")
-	{
-		if(localStorage.clickcount)
-			localStorage.clickcount = Number(localStorage.clickcount)+1;
-		else
-			localStorage.clickcount = 1;
-		if(!localStorage.oldparagraph)localStorage.oldparagraph = document.getElementById("counte").innerHTML;
-		document.getElementById("counte").innerHTML = localStorage.oldparagraph + localStorage.clickcount;
-	}
-	
-}
-
-function  clickDel(){
-	if(typeof(Storage) !== "undefined")
-	{
-		localStorage.clickcount = 0;
-		document.getElementById("counte").innerHTML = localStorage.oldparagraph;
-	}	
-}
-
-</script>
 
 </head>
 

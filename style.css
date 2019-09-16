@@ -1,6 +1,5 @@
 #navbar {
 	width : 100%;
-	max-width : 700px;
 	background-color : rgba(0,0,0,0.5);
 	overflow:hidden;
 	top:0px;
@@ -26,11 +25,23 @@
 	Top: 180px;
 }
 
+.vslika {
+	width: 100%;
+	text-align: center;
+}
+
 .Image {
 	float : left;
-	overflow : auto;
-	width : 530px;
-	height : 300px;
+	width : 53vw;
+	height : 30vw;
+	opacity : 0.5;
+}
+
+.TImage {
+	float : left;
+	overflow : hidden;
+	width : 40vw;
+	height : 30vw;
 	opacity : 0.5;
 }
 
@@ -44,10 +55,14 @@ input[type=text]:focus {
 }
 
 body {
-	background-image: url("images/rainbow.png");
+	background-color: #00ffff;
+	background-image: url("images/rainbow.png"), url("images/grass.png");
+	background-position: top, bottom;
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-color: #00ffff;
+	background-repeat: no-repeat;
+	background-attachment: fixed,scroll;
+	
 }
 
 table {
