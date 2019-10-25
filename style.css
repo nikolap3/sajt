@@ -1,23 +1,21 @@
 #navbar {
 	width : 100%;
 	background-color : rgba(0,0,0,0.5);
-	overflow:hidden;
 	top:0px;
+	padding : 10px;
 }
 
 #navbar a{
-	color : white;
-	float : left;
-	padding : 10px;
-	text-decoration : none;
+	margin: 5px;
+	text-decoration:none;
+	background-color: rgba(75,75,75,1);
 }
 
-#navbar a:hover{
-	background-color : green;
-}
-
-#navbar a:active{
-	background-color : rgba(214,167,122,0.8);
+#navbar a button{
+	width:10vw;
+	overflow:hidden;
+	border-style:none;
+	background-color: rgba(0,0,0,0);
 }
 
 .sticky {
@@ -28,6 +26,51 @@
 .vslika {
 	width: 100%;
 	text-align: center;
+}
+
+.navBtn {
+	color : white;
+	margin : 1px;
+	padding: 4px;
+	padding-top:1px;
+	padding-bottom:1px;
+	text-decoration : none;
+}
+
+.dropbtn {
+	margin:0px;
+	padding-right: 7px;
+	padding-left: 8px;
+	text-align:center;
+}
+
+.navBtn:hover {
+	background-color : green;
+}
+
+.navBtn:active {
+	background-color : rgba(214,167,122,0.8);
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: rgba(12,75,200,0.6);
+	min-width: 20px;
+	z-index: 1;
+}
+.dropdown-content a {
+	display:block;
+}
+.dropdown {
+	margin-right: 5px;
+	margin-left: 5px;
+	float:left;
+	text-align:center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .Image {

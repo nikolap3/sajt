@@ -6,107 +6,63 @@
 <title>page 2</title>
 <meta charset = "UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!--link rel="stylesheet" href="style.css"-->
 </head>
 
-<body style="background-attachment:fixed;">
-
-<a href="index.html" style="text-align:center;"><img src="images/SITEFLAG.png" style="max-width:700px;width:100%;height:150px; padding: 15px;padding-left:7px;margin-right:15px;"></a>
-
-<nav id="navbar">
-	<a href="index.html" class="navBtn">Home</a>
-	<a href="#gallery" class="navBtn" onclick="clickC()">Slika</a>
-	<a href="#contact" class="navBtn">Contact</a>
-</nav>
-
-<div class="txtdiv">
-
-<p id="counte" style="max-width:600px"> Just gonna type plenty of text to fill the screen in the hopes of it filling the screeen,možda će ovo biti lakse ako budem pricao gluposti....
-Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
-
-Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
-
-Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-
-<pre style ="font-size:15px"> Just gonna type plenty of text to fill the screen in the hopes of it 
-filling the screeen,možda će ovo biti lakse ako budem pricao gluposti....
-Some text to enable scrolling.. 
-Lorem ipsum dolor sit amet, illum definitiones no quo, 
-maluisset concludaturque et eum, altera fabulas ut quo. 
-Atqui causae gloriatur ius te, id agam omnis evertitur eum. 
-Affert laboramus repudiandae nec et. Inciderint efficiantur 
-his ad. Eum no molestiae voluptatibus.
-
-Some text to enable scrolling.. Lorem ipsum dolor sit amet, 
-illum definitiones no quo, maluisset concludaturque et eum, 
-altera fabulas ut quo. Atqui causae gloriatur ius te, id agam 
-omnis evertitur eum. Affert laboramus repudiandae nec et. 
-Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
-
-Some text to enable scrolling.. <del>Lorem ipsum dolor sit amet, 
-illum definitiones no quo, maluisset concludaturque et eum, 
-altera fabulas ut quo. Atqui causae gloriatur ius te, id agam 
-omnis evertitur eum. Affert laboramus repudiandae nec et. 
-Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</del></pre>
-
-</div>
-
-
-<section id="gallery">
-
-<picture>
-	<source media="(min-width: 900px)" srcset="images/tractor4.jpg">
-	<source media="(min-width: 600px)" srcset="images/tractor1.jpg">
-	<img src="images/tractor3.jpg" alt="tractor" style="width:300px;height:300px;">
-</picture>
-<img class="SlideShow Image" alt="spiderman in room filled with his portrait" src="https://static.doomworld.com/monthly_2017_10/59d27f0f00d35_futureoffice_original.jpg.53104698d55fe67ca823f37e1277136e.jpg">
-<img class="SlideShow Image" alt="2 people riding a rainbow shark" src="https://globalgamejam.org/sites/default/files/styles/game_sidebar__normal/public/game/featured_image/promo_5.png?itok=9dymM8JD">
-</section>
-
-<div class="txtdiv">
-
-<button type="button" onclick="clickDel()">Reset Counter</button>
-<button type="button" onclick="stickM()">Stick navbar</button>
-
-<table style="width:100%;">
-	<caption>Cool table</caption>
-	<tr>
-		<th>Num</th>
-		<th colspan="2">special info</th>
-		<th>second info</th>
-	</tr>
-	<tr>
-		<td>Num</td>
-		<td colspan="2">2 different info</td>
-		<td>second info</td>
-	</tr>
-	<tr>
-		<td>Num</td>
-		<td colspan="2">2 different info</td>
-		<td>second info</td>
-	</tr>
-	<tr>
-		<td>Num</td>
-		<td colspan="2">2 different info</td>
-		<td>second info</td>
-	</tr>
-</table>
-
-</div>
-
-<section style="margin:20px;">
-	<form action="phpscript.php" method="post" target="_blank">
-		This very big test;<br>
-		Please input password and name:<br>
-		<input type="password" name="passofkey" placeholder="password"><br>
-		<input type="text" name="Username" placeholder="John kevin"><br>
-		<input type="submit">
-	</form>
-</section>
-<footer id="contact">
-  <p>Contact at: <a href="mail_to:person@mail.com">person@mail.com</a></p>
-<footer>
+<body style="-light">
+<div class="container-fluid">
+	<div class="row" id="header">
+		<div class="row" style="width:100%">
+			<div class="col"><p>top header</p></div>
+		</div>
+		<div class="row" style="width:100%">
+			<div class="col"><p>middle header</p></div>
+		</div>
+		<div class="row" style="width:100%">
+			<div class="col"><p>bottom header</p></div>
+		
+		</div>
+	</div>
+	<div class="row" id="content">
+		<div class="col-sm-7">
+			<div class="row">
+				<div class="col-sm-2"><p>left header</p></div>
+				<div class="col-sm-2"><p>left? header</p></div>
+				<div class="col-sm-8"><p>right? header</p></div>
+			</div>
+		</div>
+		<div class="col-sm-5">
+			<div class="media border p-3" style="margin-top:15px">
+				<img src="img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+				<div class="media-body">
+				  <h4>John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>      
+				</div>
+			</div>
+			<div class="media border p-3" style="margin-top:15px">
+				<img src="img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+				<div class="media-body">
+				  <h4>John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>      
+				</div>
+			</div>
+			<div class="media border p-3" style="margin-top:15px">
+				<img src="img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+				<div class="media-body">
+				  <h4>John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>      
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row" id="footer">
+	<p>footer</p>
+	</div>
 </body>
-<script src="scripts/carousel.js"></script>
 </html>
+<!-- lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum lorem ipsum maks makisumum-->

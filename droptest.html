@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+<style>
+
+#navbar {
+	width : 100%;
+	background-color : rgba(0,0,0,0.5);
+	top:0px;
+}
+
+.navBtn {
+	color : green;
+	background-color: purple;
+	margin : 20px;
+	text-decoration : none;
+}
+
+.navBtn:hover {
+	background-color : green;
+}
+
+.navBtn:active {
+	background-color : rgba(214,167,122,0.8);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+<nav id="navbar">
+	<a href="NextStep.html" class="navBtn">Next</a>
+	<div class="dropdown">
+		<a href="index.html" class="navBtn">Home</a>
+		<div class="dropdown-content">
+			<a href="#gallery" class="navBtn" onclick="clickC()">Slika</a>
+			<a href="#contact" class="navBtn">Contact</a>
+		</div>
+	</div>
+	<a href="NextStep.html" class="navBtn">Next</a><a href="NextStep.html" class="navBtn">Next</a>
+</nav>
+
+</body>
+</html>
