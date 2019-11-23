@@ -36,7 +36,7 @@ jumbotron {
 
 @media (min-width: 25px) {
 	.bgw {
-	background-image:url("Images/Topimg2.jpg");
+	background-image:url("images/Topimg2.jpg");
 	background-repeat: no-repeat;
 	background-size:100% 100vw;
   }
@@ -61,7 +61,7 @@ jumbotron {
 
 @media (min-width: 575px) {
   .bgw {
-	background-image:url("Images/Topimg.jpg");
+	background-image:url("images/Topimg.jpg");
 	background-repeat: no-repeat;
 	background-size:100% 80vw;
   }
@@ -87,7 +87,7 @@ jumbotron {
 
 @media (min-width: 670px) {
   .bgw {
-	background-image:url("Images/Topimg.jpg");
+	background-image:url("images/Topimg.jpg");
 	background-repeat: no-repeat;
 	background-size:100% 60vw;
   }
@@ -113,7 +113,7 @@ jumbotron {
 
 @media (min-width: 950px) {
   .bgw {
-	background-image:url("Images/Topimg.jpg");
+	background-image:url("images/Topimg.jpg");
 	background-repeat: no-repeat;
 	background-size:100% 68vw;
   }
@@ -139,7 +139,7 @@ jumbotron {
 
 @media (min-width: 1200px) {
   .bgw {
-	background-image:url("Images/Topimg.jpg");
+	background-image:url("images/Topimg.jpg");
 	background-repeat: no-repeat;
 	background-size:100% 63vw;
   }
@@ -166,7 +166,7 @@ jumbotron {
 
 @media (min-width: 1400px) {
   .bgw {
-	background-image:url("Images/Topimg.jpg");
+	background-image:url("images/Topimg.jpg");
 	background-repeat: no-repeat;
 	background-size:100% 52vw;
   }
@@ -192,7 +192,7 @@ jumbotron {
 
 @media (min-width: 1600px) {
   .bgw {
-	background-image:url("Images/Topimg.jpg");
+	background-image:url("images/Topimg.jpg");
 	background-repeat: no-repeat;
 	background-size:100% 48vw;
   }
